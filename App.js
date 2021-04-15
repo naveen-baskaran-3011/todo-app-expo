@@ -18,10 +18,10 @@ export default function App() {
   };
 
   const completeTask = (index) => {
-    let itemsCopy = [...taskItems];
-    itemsCopy.splice(index, 1);
-    storeListItemsToStorage(JSON.stringify(itemsCopy));
-    setTaskItems(itemsCopy);
+    let abc = [...taskItems];
+    abc.splice(index, 1);
+    storeListItemsToStorage(JSON.stringify(abc));
+    setTaskItems(abc);
   };
 
   const getListItemsFromStorage = async() => {
